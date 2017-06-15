@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Routes } from '@angular/router';
+
+import { DealComponent } from './deal/deal.component';
+import { ContentManagementComponent } from './content-management/content-management.component';
 
 @Component({
   selector: 'app-admin',
@@ -13,3 +17,9 @@ export class AdminComponent implements OnInit {
   }
 
 }
+
+export const routes: Routes = [
+  { path: '', redirectTo: 'deal', pathMatch: 'full' },
+  { path: 'deal', component: DealComponent },
+  { path: 'content', component: ContentManagementComponent }
+];
