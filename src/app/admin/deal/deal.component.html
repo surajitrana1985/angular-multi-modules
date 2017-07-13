@@ -1,3 +1,7 @@
-<p>
-  deal works!
-</p>
+ <!-- <embed [src]="pdfContent | safe" type="application/pdf" width="500" height="375">  -->
+<!-- <iframe [src]='pdfContent | safe' width="640" height="360" frameborder="0" webkitallowfullscreen
+  mozallowfullscreen allowfullscreen>
+</iframe> -->
+<app-popup-view>
+  <embed [src]="pdfContent | safe" type="application/pdf" width="500" height="375">
+</app-popup-view>

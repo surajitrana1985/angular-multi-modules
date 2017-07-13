@@ -1,6 +1,8 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ModalModule } from 'ngx-bootstrap';
 
 import { AdminComponent, routes } from './admin.component';
 import { SharedModule } from '../shared/shared.module';
@@ -9,8 +11,11 @@ import { ContentManagementComponent } from './content-management/content-managem
 
 @NgModule({
   imports: [
+    CommonModule,
+    BrowserModule,
     SharedModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ModalModule.forRoot()
   ],
   declarations: [AdminComponent, DealComponent, ContentManagementComponent]
 })
