@@ -1,0 +1,23 @@
+.slate {
+    width: 200px;
+    height: 40px;
+    background: greenyellow;
+}
+
+.slate::before {
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: normal;
+    content: "\e013";
+    width: 30px;
+    background: brown;
+    height: 30px;
+    position: absolute;
+    border-radius: 30px;
+    left: 18px;
+    line-height: 30px;
+    text-align: center;
+    top: 33PX;
+    COLOR: #fff;
+    border: 2px solid;
+}
